@@ -8,7 +8,6 @@
     background-image: url('https://corkhouse.co.il/wp-content/uploads/2023/05/10786-%D7%9C%D7%95%D7%97-%D7%A9%D7%A2%D7%9D-3-%D7%9E%D7%9E-%D7%93%D7%92%D7%9D-WHITE-scaled.jpg');
   }
 
-
   #date-applied {
     width: 400px;
     border: 2px solid #333333;
@@ -48,13 +47,6 @@
     background-color: wheat;
   }
 
-  .car-pic {
-    width: 360px;
-  }
-
-  /* table img {
-    width: 360px;
-} */
 
   tr button {
     display: none;
@@ -72,8 +64,6 @@
     background: url(notebg.png);
     background-repeat: no-repeat;
   }
-
-
 
 
 
@@ -95,7 +85,6 @@
     overflow-wrap: break-word;
     font: 16px/26px Georgia, Garamond, Serif;
     overflow: auto;
-    overflow: auto;
     scrollbar-width: 0px;
   }
 
@@ -109,6 +98,8 @@
   }
 
   .scrollBox {
+
+    display: flex;  
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
@@ -170,13 +161,6 @@
     background-color: wheat;
   }
 
-  .car-pic {
-    width: 360px;
-  }
-
-  /* table img {
-    width: 360px;
-} */
 
   tr button {
     display: none;
@@ -195,14 +179,6 @@
     background-repeat: no-repeat;
   }
 
-
-
-
-
-  .theme {
-    background: url(notebg.png);
-    background-repeat: no-repeat;
-  }
 
   .del-button {
     margin-top: -50px;

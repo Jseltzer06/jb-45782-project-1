@@ -33,11 +33,20 @@ function collectDataFromForm() {
   };
 }
 
+
+
 //Can do time function which converts am/pm to 24hr
+//can do time function to make hours appear as double numbered
 function generateTR(data, id) {
   // deconstruction
   const { input, timeAppliedHours, dateApplied, timeAppliedMinutes } = data;
-
+  let newDate = dateApplied;
+  const dd = dateApplied.slice(8, 10);
+  const mm = dateApplied.slice(5, 7);
+  const yyyy = dateApplied.slice(0, 4);
+  newDate = `${dd}/${mm}/${yyyy}`;
+  let newHour = timeAppliedHours.toString().padStart(2,'0');
+  let newMinute = timeAppliedMinutes.toString().padStart(2,'0');
   const newTR = `
         <div class="scrollBox">
           <table class="theme-table">
@@ -48,9 +57,9 @@ function generateTR(data, id) {
             <tr>
               
             <tr>
-              <td><div class="date-area">${dateApplied}</div></td>
+              <td><div class="date-area">${newDate}</div></td>
             </tr>
-            <td><div class="time-area">${timeAppliedHours}:${timeAppliedMinutes}</div></td>
+            <td><div class="time-area">${newHour}:${newMinute}</div></td>
             </tr>
           </div>
           </table>
