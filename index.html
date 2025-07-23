@@ -15,24 +15,26 @@
     <h1>New Task list</h1>
     <form id="todo-form" onsubmit="addTask(event)">
         <label class="form-label" for="todo-input">To Do list</label>
-        <br> 
+        <br>
         <textarea id="todo-input" required></textarea><br><br>
-    
+
 
         <label id="dateLabel" class="form-label" for="date-applied">done by (date)</label>
         <input class="form-control" type="date" id="date-applied" required>
         <br>
 
         <label class="form-label" for="time-appliedHours">done by (hours)</label>
-        <input type="number" min="0" max="23" placeholder="00" id="time-appliedHours" required> : 
+        <input type="number" min="0" max="23" placeholder="00" id="time-appliedHours" required> :
         <input type="number" min="0" max="59" placeholder="00" id="time-appliedMinutes" required>
         <label class="form-label" for="time-appliedHours">(minutes)</label>
         <br>
 
-        <button>Add Task</button><button type="button" class=" btn-secondary ms-2" onclick="resetForm()">Reset Form</button>
+        <button>Add Task</button><button type="button" class=" btn-secondary ms-2" onclick="resetForm()">Reset
+            Form</button>
 
     </form>
 
     <span id="task-list" class="d-flex flex-row flex-wrap gap-3 justify-content-start"></span>
 </body>
+
 </html>

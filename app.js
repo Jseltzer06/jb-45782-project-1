@@ -11,10 +11,10 @@ function addTask(event) {
   resetForm();
 }
 function resetForm() {
-  document.getElementById("todo-input").value =` `;
-  document.getElementById("date-applied").value =` `;
-  document.getElementById("time-appliedHours").value =` `;
-  document.getElementById("time-appliedMinutes").value =` `;
+  document.getElementById("todo-input").value = ` `;
+  document.getElementById("date-applied").value = ` `;
+  document.getElementById("time-appliedHours").value = ` `;
+  document.getElementById("time-appliedMinutes").value = ` `;
 
 
 }
@@ -61,7 +61,7 @@ function generateTR(data, id) {
 function injectTRToDOM(newTR) {
   const tasks = document.getElementById(`task-list`);
   const container = document.createElement(`div`);
-  container.innerHTML+= newTR;
+  container.innerHTML += newTR;
   tasks.appendChild(container);
 }
 
