@@ -35,6 +35,7 @@ function collectDataFromForm() {
 
 
 
+
 //Can do time function which converts am/pm to 24hr
 //can do time function to make hours appear as double numbered
 function generateTR(data, id) {
